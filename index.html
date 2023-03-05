@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="style.css" rel="stylesheet" />
+		<link rel="icon" type="x-icon" href="icons/Vikinghelmet_viking_3368.ico" />
+		<title>VIKING</title>
+	</head>
+	<body>
+		<!--<header>-->
+		<nav>
+			<h2 class="logo">
+				<img src="icons/Vikinghelmet_viking_3368.ico" alt="" />
+			</h2>
+			<ul>
+				<a href="#"><li>Home</li></a>
+				<a href="#"><li>About</li></a>
+				<a href="#"><li>Contact</li></a>
+			</ul>
+		</nav>
+		<div class="banner"></div>
+
+		<div class="msg-container">
+			<div id="slider">
+				<div class="msg-col">
+					<h2>
+						“Victorious warriors win first and then go to war, while defeated
+						warriors go to war first and then seek to win”
+					</h2>
+					<p>- Sun Tzu, The Art of War</p>
+					<button class="btn">Contact Now</button>
+				</div>
+				<div class="msg-col">
+					<h2>“To know your Enemy, you must become your Enemy.”</h2>
+					<p>- Sun Tzu, The Art of War</p>
+					<button class="btn">Contact Now</button>
+				</div>
+				<div class="msg-col">
+					<h2>“Opportunities multiply as they are seized.”</h2>
+					<p>- Sun Tzu, The Art of War</p>
+					<button class="btn">Contact Now</button>
+				</div>
+				<div class="msg-col">
+					<h2>
+						“When the enemy is relaxed, make them toil. When full, starve them.
+						When settled, make them move.”
+					</h2>
+					<p>- Sun Tzu, The Art of War</p>
+					<button class="btn">Contact Now</button>
+				</div>
+			</div>
+		</div>
+		<div class="controller">
+			<div id="line1"></div>
+			<div id="line2"></div>
+			<div id="line3"></div>
+			<div id="line4"></div>
+			<div id="active"></div>
+		</div>
+
+		<script>
+			var slider = document.getElementById("slider");
+
+			var active = document.getElementById("active");
+
+			var line1 = document.getElementById("line1");
+			var line2 = document.getElementById("line2");
+			var line3 = document.getElementById("line3");
+			var line4 = document.getElementById("line4");
+
+			line1.onclick = function () {
+				slider.style.transform = "translateX(0)";
+				active.style.top = "0px";
+			};
+			line2.onclick = function () {
+				slider.style.transform = "translateX(-25%)";
+				active.style.top = "80px";
+			};
+			line3.onclick = function () {
+				slider.style.transform = "translateX(-50%)";
+				active.style.top = "160px";
+			};
+			line4.onclick = function () {
+				slider.style.transform = "translateX(-75%)";
+				active.style.top = "240px";
+			}
+		</script>
+
+		</header>
+
+		<div class="row">
+			<div
+				class="card1"
+				style="color: white; background: var(--tertiary-color)"
+			>
+				<h2 style="color: var(--secondary-color)">Classes</h2>
+				<p style="color: var(--secondary-color)">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				</p>
+			</div>
+			<div
+				class="card2"
+				style="color: white; background: var(--secondary-color)";
+			>
+				<h2>Workout</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+			</div>
+		</div>
+	</body>
+</html>
