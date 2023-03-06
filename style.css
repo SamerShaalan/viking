@@ -151,9 +151,10 @@ ul a:hover {
 }
 
 .msg-col p {
-	color: #ddd;
+	color: #d63031;
 	font-size: 15px;
 	line-height: 25px;
+	font-weight: bold;
 }
 
 .msg-col .btn {
