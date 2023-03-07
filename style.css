@@ -50,7 +50,7 @@ nav {
 	position: fixed;
 	width: 100vw;
 	height: 100px;
-	border-top: 0.5rem solid var(--tertiary-color);
+	/*border-top: 0.5rem solid var(--tertiary-color);*/
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -61,14 +61,20 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 55px;
-	width: 15%;
+	/*height: 55px;
+	width: 15%;*/
 	font-weight: 700;
-	background-color: var(--tertiary-color);
+	/*background-color: var(--tertiary-color);*/
 	margin-top: -37px;
 	border-top-right-radius: 25px;
 	border-bottom-right-radius: 0.5px;
 	border-bottom-left-radius: 42px;
+}
+
+img {
+	height: 200px;
+	width: 200px;
+	margin-right: -20px;
 }
 
 .logo {
@@ -76,13 +82,13 @@ nav {
 }
 
 .logo img {
-	padding-bottom: 10px;
+	padding-top: 40px;
 }
 
-.logo::after {
+/*.logo::after {
 	content: "ViKing";
 	color: black;
-}
+}*/
 
 ul {
 	display: flex;
