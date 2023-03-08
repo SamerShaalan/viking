@@ -7,6 +7,10 @@
 	--font: "Poppins", sans-serif;
 }
 
+link {
+	size: 64px;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -191,7 +195,7 @@ ul a:hover {
 	width: 5px;
 	height: 80px;
 	border-radius: 10px;
-	background: #fff;
+	background: cyan; /*#fff;*/
 	position: absolute;
 	top: 0;
 	transform: translateX(-50%);
