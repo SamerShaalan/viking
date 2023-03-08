@@ -109,16 +109,18 @@ ul a {
 	font-weight: 700;
 	font-size: 16px;
 }
+
 .interview {
 	color: yellow;
 }
 
 ul li {
 	list-style: none;
+	padding: -10px;
 }
 
-ul a:hover {
-	color: #d63031;
+ul .interview:hover {
+	color: white; /*#d63031;*/
 }
 
 .banner {
