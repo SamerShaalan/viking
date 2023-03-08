@@ -102,12 +102,15 @@ ul {
 
 ul a {
 	text-decoration: none;
-	color: yellow;
+	color: white;
 	margin: 0 15rem;
 	text-transform: uppercase;
 	font-family: var(--font);
 	font-weight: 700;
 	font-size: 16px;
+}
+.interview {
+	color: yellow;
 }
 
 ul li {
