@@ -103,7 +103,7 @@ ul {
 ul a {
 	text-decoration: none;
 	color: white;
-	margin: 0 15rem;
+	margin: 0 4rem;
 	/*text-transform: uppercase;*/
 	font-family: var(--font);
 	font-weight: 700;
@@ -111,18 +111,18 @@ ul a {
 }
 
 .interview {
-	color: yellow;
+	color: red;
 }
 
 ul li {
 	list-style: none;
-	padding: -10px;
+	/*padding: -10px;*/
 }
 
-ul .interview:hover {
-	font-size: 150%; /*#d63031;*/
+/*ul .interview:hover {
+	font-size: 150%; #d63031;
 	text-transform: uppercase;
-}
+}*/
 
 .banner {
 	background: url(images/783418-Ong-Bak-Muay-Thai-Warrior-Tony-Jaa-Men.jpg);
@@ -201,7 +201,7 @@ ul .interview:hover {
 	width: 5px;
 	height: 80px;
 	border-radius: 10px;
-	background: cyan; /*#fff;*/
+	background: yellow; /*#fff;*/
 	position: absolute;
 	top: 0;
 	transform: translateX(-50%);
@@ -277,6 +277,18 @@ p {
 	padding-top: 5rem;
 	padding-bottom: 5rem;
 	font-weight: bolder;
+	margin-bottom: 115px;
+}
+
+.location {
+	padding-top: 2rem;
+	padding-bottom: 2.2rem;
+	margin-top: 20px;
+}
+
+.iframe {
+	padding-top: 40px;
+	padding-bottom: 50px;
 }
 
 @keyframes slideBg {
