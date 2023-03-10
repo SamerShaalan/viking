@@ -2,8 +2,10 @@ body {
 	background-image: url("images/vkg\ logo.jpg");
 	background-attachment: fixed;
 	background-position: center;
+	max-width: 100%;
 }
 
 p {
 	font-size: larger;
+	color: yellow;
 }
