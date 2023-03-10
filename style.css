@@ -98,6 +98,7 @@ ul {
 	display: flex;
 	align-items: center;
 	height: 60px;
+	padding-right: 375px;
 }
 
 ul a {
@@ -119,10 +120,10 @@ ul li {
 	/*padding: -10px;*/
 }
 
-/*ul .interview:hover {
-	font-size: 150%; #d63031;
-	text-transform: uppercase;
-}*/
+a:hover {
+	color: #d63031;
+	font-size: 100%;
+}
 
 .banner {
 	background: url(images/783418-Ong-Bak-Muay-Thai-Warrior-Tony-Jaa-Men.jpg);
