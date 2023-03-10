@@ -90,6 +90,45 @@ contactBtn.addEventListener('click', () => {
 		  
 			// Call the showSlides function to start the slideshow
 			showSlides();
+
+			function showSlides() {
+  // Hide all message columns
+  msgCols.forEach(msgCol => {
+    msgCol.style.display = 'none';
+  });
+
+  // Increment slide index
+  slideIndex++;
+
+  // Reset slide index if it exceeds the number of message columns
+  if (slideIndex > msgCols.length) {
+    slideIndex = 1;
+  }
+
+  // Show the message column corresponding to the slide index
+  const currentMsgCol = msgCols[slideIndex - 1];
+  currentMsgCol.style.display = 'block';
+
+  // Fade in the h2 and p elements
+  const currentH2 = currentMsgCol.querySelector('h2');
+  const currentP = currentMsgCol.querySelector('p');
+  currentH2.style.opacity = 1;
+  currentP.style.opacity = 1;
+
+  // Fade out the h2 and p elements after a set interval (in milliseconds)
+  setTimeout(() => {
+    currentH2.style.opacity = 0;
+    currentP.style.opacity = 0;
+  }, 4500);
+
+  // Repeat the function after a set interval (in milliseconds)
+  setTimeout(showSlides, 5000);
+}
+
+			
+
+
+
 		  </script>
 		  
 
