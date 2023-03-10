@@ -17,6 +17,21 @@ link {
 	box-sizing: border-box;
 }
 
+#slideshow-container {
+	width: 100%;
+
+	overflow: hidden;
+	background-color: #f1f1f1;
+}
+
+.slide {
+	display: none;
+	text-align: center;
+	font-size: 36px;
+	padding: 80px 0;
+	color: #333;
+}
+
 .btn {
 	padding: 0.6rem 0.8rem;
 	text-transform: uppercase;
@@ -109,6 +124,7 @@ ul a {
 	font-family: var(--font);
 	font-weight: 700;
 	font-size: 16px;
+	text-decoration: underline;
 }
 
 .interview {
