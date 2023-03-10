@@ -2,6 +2,7 @@ body {
 	background-image: url("images/vkg_logo-removebg-preview.png");
 	background-attachment: fixed;
 	background-position: center;
+	background-repeat: no-repeat;
 }
 
 p {
