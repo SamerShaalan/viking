@@ -194,7 +194,13 @@ a:hover {
 	margin-top: 2rem;
 }
 
-.controller {
+.msg-col h2,
+.msg-col p {
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
+}
+
+/*.controller {
 	width: 1px;
 	height: 320px;
 	display: block;
@@ -203,7 +209,7 @@ a:hover {
 	top: 52%;
 	right: 40%;
 	transform: translateY(-50%);
-}
+}*/
 #line1,
 #line2,
 #line3,
