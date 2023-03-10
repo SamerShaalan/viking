@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="style.css" rel="stylesheet" />
 		<link rel="icon" type="image/icon" href="icons/Screenshot_2023-03-08-07-30-42-1.png" sizes="256x256">
+		
+		
 		<title>Viking</title>
 	</head>
 	<body>
@@ -22,77 +24,83 @@
 		</nav>
 		<div class="banner" id="SLIDE_BG"></div>
 
+
 		<div class="msg-container">
 			<div id="slider">
-				<div class="msg-col">
-					<h2>
-						“Victorious warriors win first and then go to war, while defeated
-						warriors go to war first and then seek to win”
-					</h2>
-					<p>- Sun Tzu, The Art of War</p>
-					<button class="btn" href="contact.html">Contact Now</button>
-				</div>
-				<div class="msg-col">
-					<h2>“By training you will be able to freely control your own body, conquer men with your body, and with sufficient training you will be able to beat men in fights, be able to win with your eye, and beat ten men with your spirit.</h2>
-					<p>- Miyamoto Musashi, The Book of Five Rings </p>
-					<button class="btn">Contact Now</button>
-				</div>
-				<div class="msg-col">
-					
-					<h2>
-						“When the enemy is relaxed, make them toil. When full, starve them.
-						When settled, make them move.”
-					</h2>
-					<p>- Sun Tzu, The Art of War</p>
-					<button class="btn">Contact Now</button>
-				</div>
-				<div class="msg-col">
-					
-					<h2>“Your mind is the starting point of all war and all strategy. A mind that is easily overwhelmed by emotion, that is rooted in the past instead of the present, that cannot see the world with clarity and urgency, will create strategies that will always miss the mark.”</h2>
-					<p>― Robert Greene, The 33 Strategies of War</p>
-					<button class="btn" onclick="location.href='contact.html'">Contact Now</button>
-					
-					
-				</div>
+			  <div class="msg-col">
+				<h2>“Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win”</h2>
+				<p>- Sun Tzu, The Art of War</p>
+				
+			  </div>
+			  <div class="msg-col">
+				<h2>“By training you will be able to freely control your own body, conquer men with your body, and with sufficient training you will be able to beat men in fights, be able to win with your eye, and beat ten men with your spirit.”</h2>
+				<p>- Miyamoto Musashi, The Book of Five Rings </p>
+				
+			  </div>
+			  <div class="msg-col">
+				<h2>“When the enemy is relaxed, make them toil. When full, starve them. When settled, make them move.”</h2>
+				<p>- Sun Tzu, The Art of War</p>
+				
+			  </div>
+			  <div class="msg-col">
+				<h2>“Your mind is the starting point of all war and all strategy. A mind that is easily overwhelmed by emotion, that is rooted in the past instead of the present, that cannot see the world with clarity and urgency, will create strategies that will always miss the mark.”</h2>
+				<p>― Robert Greene, The 33 Strategies of War</p>
+				
+			  </div>
+			  
 			</div>
-		</div>
-		<div class="controller">
-			<div id="line1"></div>
-			<div id="line2"></div>
-			<div id="line3"></div>
-			<div id="line4"></div>
-			<div id="active"></div>
-		</div>
+			<button id="contact-btn" class="btn">Contact Now</button>
+		  </div>
+		  
+		  
+		  
 
-		<script>
-			var slider = document.getElementById("slider");
+		  <script>
 
-			var active = document.getElementById("active");
+const contactBtn = document.querySelector('#contact-btn');
+contactBtn.addEventListener('click', () => {
+  window.location.href = 'contact.html';
+});
 
-			var line1 = document.getElementById("line1");
-			var line2 = document.getElementById("line2");
-			var line3 = document.getElementById("line3");
-			var line4 = document.getElementById("line4");
 
-			line1.onclick = function () {
-				slider.style.transform = "translateX(0)";
-				active.style.top = "0px";
-			};
-			line2.onclick = function () {
-				slider.style.transform = "translateX(-25%)";
-				active.style.top = "80px";
-			};
-			line3.onclick = function () {
-				slider.style.transform = "translateX(-50%)";
-				active.style.top = "160px";
-			};
-			line4.onclick = function () {
-				slider.style.transform = "translateX(-75%)";
-				active.style.top = "240px";
+			const slider = document.querySelector('#slider');
+			const msgCols = slider.querySelectorAll('.msg-col');
+			let slideIndex = 0;
+		  
+			function showSlides() {
+			  // Hide all message columns
+			  msgCols.forEach(msgCol => {
+				msgCol.style.display = 'none';
+			  });
+		  
+			  // Increment slide index
+			  slideIndex++;
+		  
+			  // Reset slide index if it exceeds the number of message columns
+			  if (slideIndex > msgCols.length) {
+				slideIndex = 1;
+			  }
+		  
+			  // Show the message column corresponding to the slide index
+			  msgCols[slideIndex - 1].style.display = 'block';
+		  
+			  // Repeat the function after a set interval (in milliseconds)
+			  setTimeout(showSlides, 5000);
 			}
-		</script>
+		  
+			// Call the showSlides function to start the slideshow
+			showSlides();
+		  </script>
+		  
 
-		</header>
+		
+				
+		
+
+
+
+
+		
 
 		<div class="row">
 			<div
