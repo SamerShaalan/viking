@@ -45,12 +45,12 @@ link {
 	border: 2px solid var(--tertiary-color);
 	transition: 0.3s;
 	cursor: pointer;
-	box-shadow: 5px 10px rgb(26, 25, 25);
+
 	border-radius: 25px;
 }
 
 .btn:hover {
-	background: transparent;
+	scale: 1.1;
 }
 
 body {
@@ -113,7 +113,6 @@ ul {
 	display: flex;
 	align-items: center;
 	height: 60px;
-	padding-right: 375px;
 }
 
 ul a {
@@ -155,6 +154,12 @@ a:hover {
 	margin: 0 20px;
 }
 
+.phone {
+	font-weight: bold;
+	margin: 0 20px;
+	color: white;
+}
+
 #SLIDE_BG {
 	animation: slideBg 20s linear infinite 0s;
 	animation-timing-function: ease-in-out;
@@ -167,7 +172,6 @@ a:hover {
 	left: 14%;
 	top: 5%;
 	transform: translateY(50%);
-	overflow: hidden;
 }
 
 #slider {
@@ -297,20 +301,26 @@ p {
 	align-items: center;
 }
 
+.classes h2 {
+	padding-bottom: 100px;
+}
+
 .card h2 {
 	text-transform: uppercase;
 }
 
 .classes {
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+	padding-top: 20px;
 	font-weight: bolder;
 	margin-bottom: 115px;
 }
 
+.bchamoun {
+	padding-top: 20px;
+	font-weight: bolder;
+}
+
 .location {
-	padding-top: 2rem;
-	padding-bottom: 2.2rem;
 	margin-top: 20px;
 }
 
@@ -344,4 +354,15 @@ p {
 		background-image: url(images/muay-thai-ring-fight.jpg);
 		background-size: 100%;
 	}
+}
+
+.banner {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.bannerFilter {
+	background-color: rgb(0, 0, 0, 0.4);
+	position: absolute;
 }
