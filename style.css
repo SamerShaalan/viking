@@ -329,6 +329,10 @@ p {
 	padding-bottom: 50px;
 }
 
+.media {
+	font-size: 32px;
+}
+
 @keyframes slideBg {
 	0% {
 		background-image: url(images/783418-Ong-Bak-Muay-Thai-Warrior-Tony-Jaa-Men.jpg);
