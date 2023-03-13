@@ -6,6 +6,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: Arial, sans-serif;
+	background-color: black;
 }
 
 .container {
@@ -17,6 +18,7 @@ body {
 h1 {
 	text-align: center;
 	margin-bottom: 40px;
+	color: #f1c40f;
 }
 
 form label {
@@ -39,7 +41,7 @@ form textarea {
 }
 
 form input[type="submit"] {
-	background-color: #4caf50;
+	background-color: #f1c40f;
 	color: white;
 	padding: 10px 20px;
 	border: none;
@@ -48,7 +50,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-	background-color: #3e8e41;
+	background-color: yellow;
 }
 
 .contact-info {
@@ -59,12 +61,28 @@ form input[type="submit"]:hover {
 
 .contact-info h2 {
 	margin-bottom: 20px;
+	color: #f1c40f;
 }
 
 .contact-info p {
 	margin-bottom: 10px;
+	color: #f1c40f;
 }
 
 .contact-info i {
 	margin-right: 10px;
+}
+.button {
+	position: fixed;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	padding: 12px 24px;
+	background-color: #4caf50;
+	color: white;
+	font-size: 16px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-decoration: none;
 }
