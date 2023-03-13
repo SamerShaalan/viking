@@ -150,8 +150,18 @@ a:hover {
 
 .social-icon {
 	text-decoration: none;
-	font-size: 32px;
-	margin: 0 20px;
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	top: 50px;
+	position: relative;
+	transition: transform 0.3s ease-in-out;
+	color: blue;
+}
+
+.social-icon:hover {
+	color: white;
+	transform: scale(3);
 }
 
 .phone {
@@ -176,7 +186,7 @@ a:hover {
 
 #slider {
 	display: inline-flex;
-	transition: 0.5s;
+	transition: 5s;
 }
 
 .msg-col {
@@ -290,6 +300,8 @@ p {
 	flex-direction: column;
 	align-items: center;
 	border-top-right-radius: 50px;
+	padding-top: 28px;
+	position: relative;
 }
 
 .card2 {
@@ -303,6 +315,7 @@ p {
 
 .classes h2 {
 	padding-bottom: 100px;
+	position: relative;
 }
 
 .card h2 {
